@@ -28,7 +28,7 @@
 
 - `Dockerfile`: 生产镜像定义
 - `docker-entrypoint.sh`: 启动时生成 `sing-box` 配置并启动服务
-- `.github/workflows/build-amd64.yml`: GitHub Actions x86 镜像构建流程
+- `.github/workflows/build-amd64.yml`: GitHub Actions 多架构镜像构建流程
 
 ## 本地构建
 
@@ -92,7 +92,7 @@ docker run --rm \
 
 ## GitHub Actions
 
-[build-amd64.yml](/home/cnic/work/tmp/naive-caddy-h2c-demo/.github/workflows/build-amd64.yml) 会在下面场景构建 `linux/amd64` 镜像：
+[build-amd64.yml](/home/cnic/work/tmp/naive-caddy-h2c-demo/.github/workflows/build-amd64.yml) 会在下面场景构建 `linux/amd64` 和 `linux/arm64` 镜像：
 
 - push 到 `main`
 - 打 tag
