@@ -1,0 +1,3 @@
+certs/
+podman.sock
+.DS_Store
