@@ -44,10 +44,12 @@ cat > /etc/sing-box/config.json <<EOF
   "outbounds": [
     {
       "type": "direct",
-      "tag": "direct"
+      "tag": "direct",
+      "bind_interface": "eth0"
     }
   ],
   "route": {
+    "auto_detect_interface": false,
     "rules": [
       {
         "rule_set": "geoip-cn",

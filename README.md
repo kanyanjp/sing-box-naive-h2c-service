@@ -85,6 +85,7 @@ docker run --rm \
 - 一个 `naive` 入站
 - 监听 `0.0.0.0:$PORT`
 - 使用单用户鉴权
+- `direct` 出站显式绑定 `eth0`
 - 先匹配中国 IP，命中后直接拒绝
 - 再匹配 `geosite-geolocation-!cn`，命中后明确走 `direct`
 - 最后匹配 `geosite-cn`，命中后拒绝
